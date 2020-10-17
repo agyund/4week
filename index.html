@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>INTERSTELLAR</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+
+</head>
+<link rel="stylesheet" type="text/css" href="./reset.css">
+<style>
+    canvas,
+    body,
+    html {
+        margin: -2px;
+        background-color: black;
+    }
+
+    img {
+        width: 20%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #chochim {
+        transition-property: all;
+        transition-duration: 0.1s;
+        transform-origin: left top;
+    }
+
+    #chochim:hover {
+        transform: rotate(7deg) translate(-50%, -50%);
+        transition-timing-function: ease-out;
+    }
+</style>
+
+<body>
+    <div>
+        <img src="./clock.png">
+        <img id="chochim" src="./clock_1.png"></div>
+    <canvas id="divCanvas"></canvas>
+</body>
+
+</html>
